@@ -1,0 +1,40 @@
+ .tag_cloud { padding: 3px; text-decoration: none; }  
+ .tag_cloud:link  { color: #F37500; }  
+ .tag_cloud:visited { color: #FF7300; }  
+ .tag_cloud:hover { color: #ffffff; background: #FF7B00; }  
+ .tag_cloud:active { color: #ffffff; background: #ACFC65; }  
+
+#delicioustagsbadge
+{
+font-family:"gill sans",arial,sans-serif;
+border:1px solid #FC7D14;
+background-color: #FFF2D5;
+text-align:center;
+width:220px;
+padding:5px;
+}
+
+#delicioustagsbadge h2 a 
+{
+color: #FF9200;
+text-decoration: none;
+}
+
+#delicioustagsbadge h2 a:hover
+{
+text-decoration: underline;
+}
+
+#delicioustagsbadge *{
+  font-size:90%;
+  list-style:none;
+  margin:0;
+  padding:0;
+  line-height:1.3em;
+}
+
+#delicioustagsbadge #delicioustagslist{
+  position:relative;
+  min-height:70px;
+  margin-top:.5em;
+}

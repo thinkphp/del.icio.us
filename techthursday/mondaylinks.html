@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+   <title>Yahoo TechThursday Generator</title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
+   <style type="text/css">
+html,body{font-family: georgia,verdana,sans-serif,arial;font-size: 15px}
+h1{font-size:200%; margin:0; padding-bottom:10px; color:#393;background: url("delicious.gif") no-repeat scroll left top transparent}
+h1 div{padding-left: 60px;padding-top: 15px}
+a{color: #393}
+h2 span{color:#fff;background:#393;-moz-border-radius:20px;padding:10px 15px;}
+textarea{width:600px;height:200px;padding:10px;-moz-box-shadow:5px 5px 2em rgba(0,0,0,.5);-webkit-box-shadow:5px 5px 2em rgba(0,0,0,.5);box-shadow:5px 5px 2em rgba(0,0,0,.5);display:block;margin:2em 0;border:none;background:#eee;}
+#ft{font-size:80%;color:#888;text-align:left;margin:2em 0;font-size: 16px}
+#ft p a{color:#93C37D;}
+   </style>
+</head>
+<body>
+<div id="doc" class="yui-t7">
+   <div id="hd" role="banner"><h1><div>Del.icio.us > Thinkphp > TAGS > JavaScript</div></h1></div>
+   <div id="bd" role="main">     
+	<div class="yui-g">
+        <h2><span>1</span> Links Preview</h2>
+        <ul id="result"></ul>
+        <h2><span>2</span> Links Copy+Paste</h2>
+        <textarea id="copypaste"></textarea>
+	</div>
+	</div>
+   <div id="ft" role="contentinfo"><p>@<a href="http://thinkphp.ro">thinkphp</a></p></div>
+</div>
+<script type="text/javascript">
+function myslides(o){
+   if(window.console) {console.log(o);}
+   var out = document.getElementById('result'),
+       copypaste = document.getElementById('copypaste'),
+       html = '',
+       disp = '',
+       n,i,j;   
+
+       for(i=0,j=o.length;i<j;i++) {
+             n = o[i].d;
+             html += '<li><a href="'+ o[i].u +'">' + n +'</a></li>';
+       }
+       out.innerHTML = html;
+       disp = html.replace(/</g,'&lt;');
+       disp = disp.replace(/>/g,'&gt;');       
+       copypaste.innerHTML = '&lt;ul&gt;' + disp + '&lt;/ul&gt;';
+}
+</script>
+<script type="text/javascript" src="http://feeds.delicious.com/v2/json/thinkphp/javascript?count=50&callback=myslides"></script>
+</body>
+</html>

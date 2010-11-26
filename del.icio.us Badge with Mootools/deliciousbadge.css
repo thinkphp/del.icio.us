@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0;}
+
+body {
+
+font-family:arial,sans-serif;
+font-size:1em;
+color:#000;
+background:#fff;
+padding:2em;
+
+}
+
+#delicious {
+
+padding: .2em;
+padding-left: 55px;
+background: url(delicious.gif) left center no-repeat;
+color: #369;
+}
+
+
+#delicious span {
+
+color:#666;
+font-weight: bold;
+font-size: .8em;
+
+}
+
+#deliciouslist {
+
+margin: 5px 5px 5px 15px;
+font-size: .8em;
+
+}
+
+#deliciouslist li {
+
+line-height: 1.3em;
+padding-bottom: .2em;
+color: #ccc;
+list-style: square;
+
+}
+
+#deliciouslist li a {
+
+color: #333;
+
+}
+
+
