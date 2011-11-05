@@ -35,7 +35,7 @@ var deliciousbadge = new Class({
                   user = this.options.o.href.replace(/.*\//g,'');  
                   msg = new Element('span').set('html', this.options.loadingMessage).injectInside(this.options.o); 
                   seeder = new Element('script');     
-                  srcurl = 'http://del.icio.us/feeds/json/'+ user +'?count='+ this.options.amount+'&callback=callback';
+                  srcurl = 'http://feeds.del.icio.us/v2/json/'+ user +'?count='+ this.options.amount+'&callback=callback';
                   seeder.setProperties({'type':'text/javascript','src': srcurl}); 
                   seeder.injectInside(document.head);
                     window.callback = function(dataset) {                      
