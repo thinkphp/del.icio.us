@@ -104,7 +104,7 @@ deliciousbadge = function() {
 
                  var seeder = document.createElement('script');
 
-                 var srcurl = 'http://del.icio.us/feeds/json/'+ user +'?count='+ amount + '&callback=deliciousbadge.retrieveData';
+                 var srcurl = 'http://feeds.del.icio.us/v2/json/'+ user +'?count='+ amount + '&callback=deliciousbadge.retrieveData';
  
                     seeder.setAttribute('src', srcurl);
                      
