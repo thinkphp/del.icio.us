@@ -53,7 +53,7 @@ var delicioustagsbadge = function(){
 
                                name = link.href.split('/');
 
-                           var url = 'http://del.icio.us/feeds/json/tags/' + name[name.length-1] + '?count=' + amount + '&sort=alpha&callback=delicioustagsbadge.show';
+                           var url = 'http://feeds.del.icio.us/v2/json/tags/' + name[name.length-1] + '?count=' + amount + '&sort=alpha&callback=delicioustagsbadge.show';
 
                                if(skin && skin[1]) {
 
